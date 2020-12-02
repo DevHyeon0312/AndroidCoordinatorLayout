@@ -17,12 +17,14 @@
             android:padding="10dp"
             android:text="@string/basic_activity" />
 
+
         <Button
-            android:id="@+id/btn_title"
+            android:id="@+id/btn_footer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="" />
+            android:text="@string/footer_activity" />
+
 
     </LinearLayout>
 

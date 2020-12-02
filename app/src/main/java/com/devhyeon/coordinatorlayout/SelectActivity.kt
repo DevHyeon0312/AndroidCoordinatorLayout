@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.devhyeon.coordinatorlayout.BasicSample.BasicActivity
+import com.devhyeon.coordinatorlayout.FooterSample.FooterActivity
 import com.devhyeon.coordinatorlayout.databinding.ActivitySelectBinding
 
 class SelectActivity : AppCompatActivity() , SelectActivityInterface {
@@ -21,7 +22,12 @@ class SelectActivity : AppCompatActivity() , SelectActivityInterface {
     override fun buttonClickListener() {
         binding.btnBase.setOnClickListener {
             startActivity(
-                Intent(this, BasicActivity::class.java)
+                Intent(it.context, BasicActivity::class.java)
+            )
+        }
+        binding.btnFooter.setOnClickListener(){
+            startActivity(
+                Intent(it.context,FooterActivity::class.java)
             )
         }
     }

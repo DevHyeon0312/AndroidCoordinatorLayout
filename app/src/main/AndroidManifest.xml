@@ -21,6 +21,9 @@
         <activity android:name=".BasicSample.BasicActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
 
+        <activity android:name=".FooterSample.FooterActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
     </application>
 
 </manifest>

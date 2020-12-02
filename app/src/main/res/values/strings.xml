@@ -24,7 +24,10 @@
         20. 지금까지 온 길보다 앞으로 갈 길이 더 많은만큼 치열하게 살았으면 좋겠습니다.\n
     </string>
 
+    <string name="dev_hyeon_footer">This is Footer</string>
+
 
     <string name="basic_activity">Basic Sample</string>
+    <string name="footer_activity">Footer Sample</string>
 
 </resources>

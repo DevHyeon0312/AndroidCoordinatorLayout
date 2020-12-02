@@ -14,6 +14,6 @@ class BasicActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.header.toolbar)
-        supportActionBar!!.title = "String"
+        supportActionBar!!.title = "BasicActivity"
     }
 }
