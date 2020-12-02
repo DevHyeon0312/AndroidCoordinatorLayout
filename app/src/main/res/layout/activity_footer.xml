@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Coordinator Layout -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Header -->
+    <include
+        android:id="@+id/header"
+        layout="@layout/activity_footer_header"/>
+
+    <!-- Body -->
+    <include
+        android:id="@+id/body"
+        layout="@layout/activity_footer_body"/>
+
+    <!-- Footer -->
+    <include
+        android:id="@+id/footer"
+        layout="@layout/activity_footer_footer"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
