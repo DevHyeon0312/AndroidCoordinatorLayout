@@ -8,14 +8,10 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.ViewCompat
 
 
-class FooterBehavior(context: Context?, attrs: AttributeSet?) :
-    CoordinatorLayout.Behavior<View>(context, attrs) {
-    private var mTotalDyDistance //dy往一个方向移动的总距离
-            = 0
-    private var hide = false //footer是否隐藏
-
-    private var childHeight //footer height
-            = 0
+class FooterBehavior(context: Context?, attrs: AttributeSet?) : CoordinatorLayout.Behavior<View>(context, attrs) {
+    private var mTotalDyDistance  = 0
+    private var hide = false
+    private var childHeight = 0
 
     override fun onStartNestedScroll(
         coordinatorLayout: CoordinatorLayout,
@@ -36,13 +32,10 @@ class FooterBehavior(context: Context?, attrs: AttributeSet?) :
         dy: Int,
         consumed: IntArray
     ) {
-        //判断手指是否先往一个方向移动一段距离后再往反方向移动，如果是，则在往反方向移动时mTotalDyDistance初始化为0，再计算该方向的距离总和
         if (dy > 0 && mTotalDyDistance < 0 || dy < 0 && mTotalDyDistance > 0) {
             mTotalDyDistance = 0
         }
-        //计算该方向的总距离
         mTotalDyDistance += dy
-        //判断当前操作是向上滑动还是向下滑动
         if (!hide && mTotalDyDistance > child.height) {
             hideView(child)
             hide = true
