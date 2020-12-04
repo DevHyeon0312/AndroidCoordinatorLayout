@@ -26,6 +26,13 @@
             android:text="@string/footer_activity" />
 
 
+        <Button
+            android:id="@+id/btn_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/drawer_activity" />
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
